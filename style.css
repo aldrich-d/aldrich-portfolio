@@ -1,17 +1,170 @@
-/* Social Icons */
-.social-icons {
-  margin-top: 1rem;
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #0073e6;
+  color: white;
+  padding: 2rem 0;
   text-align: center;
 }
 
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+nav {
+  background: #222;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Social Icons Section */
+.social-icons-wrapper {
+  background-color: #e6f2ff; /* light blue */
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* spacing between icons */
+  align-items: center;
+}
+
 .social-icons a {
-  color: #0073e6;
-  margin: 0 10px;
-  font-size: 24px;
+  color: gray;
+  font-size: 28px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #005bb5;
+  color: #0073e6;
+}
+
+/* Floating Email Button */
+.email-float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0073e6;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/**** Contact Form Popup ****/
+.email-form-popup {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.email-form-popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form-popup input,
+.email-form-popup textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.email-form-popup button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.email-form-popup button[type="submit"] {
+  background-color: #0073e6;
+  color: white;
+}
+
+.email-form-popup .close-btn {
+  background-color: #ccc;
+  color: #333;
 }
