@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,6 +7,11 @@ body {
   color: #333;
 }
 
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+/* Header */
 header {
   background: #0073e6;
   color: white;
@@ -20,8 +24,13 @@ header {
   max-width: 1000px;
   margin: auto;
   padding: 2rem 0;
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Navigation */
 nav {
   background: #222;
 }
@@ -51,22 +60,12 @@ nav a:hover {
   background: #444;
 }
 
-h1, h2 {
-  margin-bottom: 1rem;
-}
-
-section {
-  background: white;
-  margin-bottom: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
+/* Sections */
 ul {
   padding-left: 1.5rem;
 }
 
+/* Footer */
 footer {
   background: #0073e6;
   color: white;
@@ -76,9 +75,10 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 /* Social Icons Section */
 .social-icons-wrapper {
-  background-color: #e6f2ff; /* light blue */
+  background-color: #e6f2ff;
   padding: 2rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -88,7 +88,7 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 30px; /* spacing between icons */
+  gap: 30px;
   align-items: center;
 }
 
@@ -103,7 +103,7 @@ footer {
   color: #0073e6;
 }
 
-/* Floating Button */
+/* Floating Email Button */
 .email-float-btn {
   position: fixed;
   bottom: 20px;
@@ -122,7 +122,7 @@ footer {
   z-index: 1000;
 }
 
-/* Popup Form */
+/* Email Form Popup */
 .email-form-popup {
   display: none;
   position: fixed;
