@@ -14,7 +14,7 @@ h1, h2 {
 /* Header */
 header {
   background: #0073e6;
-  color: white;
+  color: black;
   padding: 2rem 0;
   text-align: center;
 }
@@ -24,7 +24,7 @@ header {
   max-width: 1000px;
   margin: auto;
   padding: 2rem 0;
-  background: white;
+  background: #0073e6;
   margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
