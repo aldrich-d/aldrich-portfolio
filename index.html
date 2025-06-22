@@ -60,35 +60,38 @@
 <div class="email-float-btn" onclick="toggleForm()">
   <i class="fas fa-envelope"></i>
 </div>
-<!-- Hidden Contact Form Popup -->
+
+<!-- Popup Contact Form -->
 <div class="email-form-popup" id="emailForm">
-  <form action="https://formsubmit.co/aldrichdsouzaa@gmail.com" method="POST">
+  <form action="https://formsubmit.co/your@email.com" method="POST">
     <h3>Contact Me</h3>
-    <input type="text" name="_subject" placeholder="Subject" required />
-    <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
-    <button type="submit">Send</button>
-    <button type="button" onclick="toggleForm()" class="close-btn">Close</button>
+
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" placeholder="John Doe" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" placeholder="john@example.com" required />
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="4" placeholder="Your message..." required></textarea>
+
+    <!-- Hidden Fields -->
+    <input type="hidden" name="_replyto" value="email" />
+    <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html" />
+
+    <!-- Side-by-side buttons -->
+    <div class="button-row">
+      <button type="submit" class="send-btn">Send</button>
+      <button type="button" onclick="toggleForm()" class="cancel-btn">Cancel</button>
+    </div>
   </form>
 </div>
 
-  <!-- ✅ Moved OUTSIDE the contact container -->
-  <section class="social-icons-wrapper">
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/1ZA7vvLHzD/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/aldrich.dsouza/profilecard/?igsh=N2V6Z2JtOWZ5M2wz" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/aldrich-dsouza" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/aldrich-d" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Aldrich. All rights reserved.</p>
-  </footer>
- 
- <script>
+<!-- Toggle Form Script -->
+<script>
   function toggleForm() {
     const form = document.getElementById("emailForm");
-    form.style.display = (form.style.display === "block") ? "none" : "block";
+    form.style.display = form.style.display === "block" ? "none" : "block";
   }
 </script>
 </body>
