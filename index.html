@@ -96,3 +96,112 @@
 </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aldrich | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Aldrich</h1>
+      <p>Student | Air Transport & Logistics | Data Analyst</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a Master's student in Air Transport & Logistics, with experience in operations research, data analysis, and transportation planning. I love solving real-world logistics challenges with tools like Excel, GAMS, Power BI, and Python.</p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>Excel, Power BI, Python, R</li>
+      <li>GAMS, MILP, Rapidex</li>
+      <li>ADS-B Data Analysis, Traffic Assignment</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Campus Shuttle Optimization</strong> – GAMS + Excel for efficient line planning.</li>
+      <li><strong>Spare Part Delivery for AOG Events</strong> – Time-critical logistics simulation.</li>
+      <li><strong>Supply Chain Optimization</strong> – MILP in RStudio for multi-echelon network.</li>
+      <li><strong>Urban Transport Planning</strong> – Rapidex + TomTom + OSM for Bratislava.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <!-- Social Icons Section -->
+  <section class="social-icons-wrapper">
+    <div class="social-icons">
+      <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Floating Email Button -->
+  <div class="email-float-btn" onclick="toggleForm()">
+    <i class="fas fa-envelope"></i>
+  </div>
+
+  <!-- Email Contact Form -->
+  <div class="email-form-popup" id="emailForm">
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <h3>Contact Me</h3>
+
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" placeholder="john@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <input type="hidden" name="_replyto" value="email" />
+      <input type="hidden" name="_next" value="https://yourusername.github.io/thank-you.html" />
+
+      <div class="button-row">
+        <button type="submit" class="send-btn">Send</button>
+        <button type="button" onclick="toggleForm()" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Aldrich. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleForm() {
+      const form = document.getElementById("emailForm");
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
